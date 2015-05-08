@@ -1,5 +1,15 @@
 ## Variety plugins searcher
-Discover all the available Variety plugins in the npmjs.com registry.
+Discover all the available Variety plugins in the npmjs.com registry. Plugin can be discovered only if contains
+```variety-plugin``` value in ```keywords``` [field of package.json](https://docs.npmjs.com/files/package.json#keywords).
+
+For example:
+```javascript
+  "keywords": [
+    "variety-plugin",
+    "mongodb",
+    "csv"
+  ]
+```
 
 ## Usage
 
@@ -20,7 +30,7 @@ plugins.all()
 ```
 
 ## Get Details
-Get details of plugin ```csv```, in npmjs registry published as ```variety-plugin-csv```.
+Get details of plugin ```variety-plugin-csv```.
 ```javascript
 var plugins = require('variety-plugins-searcher')
 plugins.getDetails('csv')
