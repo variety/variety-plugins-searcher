@@ -1,4 +1,8 @@
 # intellij idea project files
 .idea/
 
+# dependencies
 node_modules
+
+# coverage reports
+coverage/
