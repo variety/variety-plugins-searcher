@@ -6,7 +6,7 @@ describe('Plugin searcher', function () {
   it('should download and process list of plugins', function (testDone) {
 
     nock('https://registry.npmjs.org')
-      .get('/-/_view/byKeyword?startkey=[%22variety-plugin%22]&endkey=[%22variety-plugin%22,{}]&group_level=3')
+      .get('/-/_view/byKeyword?startkey=[%22variety-plugin%22]&endkey=[%22variety-plugin%22,%7B%7D]&group_level=3')
       .replyWithFile(200, __dirname + '/registry-all.json');
 
     searcher.all()
