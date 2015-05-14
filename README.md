@@ -1,4 +1,9 @@
 ## Variety plugins searcher
+
+[![Build Status](https://travis-ci.org/todvora/variety-plugins-searcher.svg)](https://travis-ci.org/todvora/variety-plugins-searcher)
+[![Dependencies Status](https://david-dm.org/todvora/variety-plugins-searcher/status.svg)](https://david-dm.org/todvora/variety-plugins-searcher/)
+[![DevDependencies Status](https://david-dm.org/todvora/variety-plugins-searcher/dev-status.svg)](https://david-dm.org/todvora/variety-plugins-searcher/#info=devDependencies)
+
 Discover all the available Variety plugins in the npmjs.com registry. Plugin can be discovered only if contains
 ```variety-plugin``` value in ```keywords``` [field of package.json](https://docs.npmjs.com/files/package.json#keywords).
 

@@ -16,7 +16,7 @@
     "request": "^2.55.0"
   },
   "devDependencies": {
-    "nock": "^1.6.0",
+    "nock": "^2.0.1",
     "jasmine-node": "^1.14.5",
     "istanbul": "^0.3.13",
     "jshint": "^2.6.3",

@@ -16,8 +16,9 @@ describe('Plugin searcher', function () {
           {name:'variety-plugin-latex',description:'Variety plugin, outputs results of Variety analysis in Latex format.'}
         ]);
       })
-      .fail(function() {
-        expect(true).toBe(false);
+      .fail(function(ex) {
+        console.error(ex);
+        expect(ex).toBeNull();
       })
       .fin(function () {
          testDone();
