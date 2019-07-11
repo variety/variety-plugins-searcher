@@ -6,15 +6,15 @@ describe('Plugin searcher', function () {
   it('should download and process list of plugins', function (testDone) {
 
     nock('https://registry.npmjs.org')
-      .get('/-/_view/byKeyword?startkey=[%22variety-plugin%22]&endkey=[%22variety-plugin%22,%7B%7D]&group_level=3')
+      .get('/-/v1/search?text=keywords:variety-plugin')
       .replyWithFile(200, __dirname + '/registry-all.json');
 
     searcher.all()
       .then(function(result){
-        expect(result).toEqual([
-          {name:'variety-plugin-csv',description:'Variety plugin formatting analysis results to CSV'},
-          {name:'variety-plugin-latex',description:'Variety plugin, outputs results of Variety analysis in Latex format.'}
-        ]);
+          expect(result[0].package.name).toEqual('variety-plugin-latex');
+          expect(result[0].package.description).toEqual('Variety plugin, outputs results of Variety analysis in Latex format.');
+          expect(result[1].package.name).toEqual('variety-plugin-csv');
+          expect(result[1].package.description).toEqual('Variety plugin formatting analysis results to CSV');
       })
       .fail(function(ex) {
         console.error(ex);

@@ -1,6 +1,6 @@
 {
   "name": "variety-plugins-searcher",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Discover all the available Variety plugins in the npmjs.com registry.",
   "main": "index.js",
   "scripts": {
@@ -12,14 +12,14 @@
   "author": "Tomas Dvorak <todvora@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "q": "^1.3.0",
-    "request": "^2.55.0"
+    "q": "^1.5.1",
+    "request": "^2.88.0"
   },
   "devDependencies": {
-    "nock": "^2.0.1",
+    "coveralls": "^2.11.2",
+    "istanbul": "^0.4.5",
     "jasmine-node": "^1.14.5",
-    "istanbul": "^0.3.13",
     "jshint": "^2.6.3",
-    "coveralls": "^2.11.2"
+    "nock": "^2.0.1"
   }
 }
