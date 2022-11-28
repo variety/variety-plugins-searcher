@@ -1,6 +1,5 @@
 ## Variety plugins searcher
 
-[![Build Status](https://travis-ci.org/variety/variety-plugins-searcher.svg)](https://travis-ci.org/todvora/variety-plugins-searcher)
 [![Dependencies Status](https://david-dm.org/variety/variety-plugins-searcher/status.svg)](https://david-dm.org/todvora/variety-plugins-searcher/)
 [![DevDependencies Status](https://david-dm.org/variety/variety-plugins-searcher/dev-status.svg)](https://david-dm.org/todvora/variety-plugins-searcher/#info=devDependencies)
 
